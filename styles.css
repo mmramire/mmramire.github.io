@@ -1,0 +1,89 @@
+:root {
+    --titulos: "Telefon Black", sans-serif;
+    --textos: Lato, "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+    --color-titulo: #333333;
+    --color-fondo-gris: #EEEEEE;
+    --color-fondo-imagen: #FFFFFF;
+    --color-texto: #5f5f5f;
+    --color-link-tributo: #74638F;
+    --color-link-secundario: #324b61;
+    --color-negro: #000000;
+}
+
+#main {
+    background-color: var(--color-fondo-gris);
+}
+
+#title {
+    color: var(--color-titulo, --color-negro);
+    text-align: center;
+    padding-top: 50px;
+    font-size: 3em;
+}
+
+h3 {
+    text-align: center;
+    color: var(--color-titulo);
+}
+
+h4 {
+    text-align: center;
+    color: var(--color-texto);
+}
+
+#img-div {
+    background-color: var(--color-fondo-imagen);
+    padding: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#image {
+    display: block; /*así lo soluciona Dorian*/
+    margin-left: auto;
+    margin-right: auto;
+    /*margin: o auto; es un error de teoria, debería hacerse margin: 1em auto;*/
+    max-width: 100%;/* hace responsive la imagen*/
+    height: auto; 
+}
+
+#img-caption {
+    color: var(--color-texto, --color-negro);
+    text-align: center;
+}
+
+#tribute-info {
+    color: var(--color-texto);
+    text-align: left;
+    padding: 2% 30% 2% 30%;
+}
+
+p {
+    text-align: center;
+}
+
+.frase1 {
+    text-align: center;
+    text-decoration: wavy;
+    display: block;
+    width: auto;
+    height: fit-content;
+}
+
+.frase2 {
+    text-align: left;
+    display: block;
+    width: auto;
+    height: fit-content;
+
+}
+
+.frase3 {
+    text-align: center;
+    font-style: var(--color-titulo);
+    font-weight: bold;
+}
+
+#tribute-link {
+    color: var(--color-link-tributo, --color-link-secundario)
+}
